@@ -1,0 +1,27 @@
+.h1 {
+    text-align: center; 
+}
+
+#img1{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: -3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .50;
+}
+
+.rules{
+    font-size: 10px;
+    font-family:-sans-serif -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.wsls{
+    box-sizing: content-box;
+}
+
+.card{
+    border: 20px;
+}
