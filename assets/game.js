@@ -31,27 +31,66 @@
 var wins = 0;
 var losses = 0; 
 var score = 0;
+
+var crystal1 = Math.floor(Math.random() * 14) + 1;
+console.log(crystal1);
+
+var crystal2 = Math.floor(Math.random() * 14) + 1;
+ console.log(crystal2);
+
+var crystal3 = Math.floor(Math.random() * 14) + 1;
+console.log(crystal3);
+
+var crystal4 = Math.floor(Math.random() * 14) + 1;
+console.log(crystal4);
+
+
+
 $(document).ready(function() {
-    var targetNumber = Math.floor(Math.random() * 99) + 50;
+    var targetNumber = Math.floor(Math.random() * 49) + 50;
     console.log(targetNumber);
 
     $("#number").append(targetNumber);
 
+
+
+
+
     $("#amethyst").click(function(){
-        console.log(crystal1)
-        $("#score").append(crystal1 + score);
+        scoreKeeper(crystal1)
     });
+    $("#citrine").click(function(){
+        scoreKeeper(crystal2)
+    });
+
+    $("#sodalite").click(function(){
+        scoreKeeper(crystal3)
+    });
+
+    $("#smoky-quarts").click(function(){
+        scoreKeeper(crystal4)
+    });
+
+    function scoreKeeper(crystal){
+        score += crystal
+        $("#score").html(score)
+    };
+
+    if (score === targetNumber){
+        wins += 1;
+        score = 0;
+        $("#score").html(score)
+        $("#wins").html(wins)
+    } else if (score > targetNumber){
+        losses += 1;
+        $("#score").html(score)
+    }
+
+
+    // function reset(){
+
+    // }
 });
 
-var crystal1 = Math.floor(Math.random() * 29) + 1;
-console.log(crystal1);
 
-var crystal2 = Math.floor(Math.random() * 29) + 1;
- console.log(crystal2);
-
-var crystal3 = Math.floor(Math.random() * 29) + 1;
-console.log(crystal3);
-
-var crystal4 = Math.floor(Math.random() * 29) + 1;
-console.log(crystal4);
 
