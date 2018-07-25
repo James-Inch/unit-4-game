@@ -70,7 +70,7 @@ $(document).ready(function () {
 
     // Reset values of crystals and target...   
     function reset(){
-        var targetNumber = Math.floor(Math.random() * 49) + 50;
+        targetNumber = Math.floor(Math.random() * 49) + 50;
         console.log(targetNumber);
         $("#number").html(targetNumber);
         crystal1 = Math.floor(Math.random() * 14) + 1;
