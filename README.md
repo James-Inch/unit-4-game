@@ -12,5 +12,4 @@ There are four crystals below, by clicking a crystal you will add a specific amo
 * Each time when the game starts, the game will change the values of each crystal.
 
 
-
-Deployed at https://james-inch.github.io/unit-4-game/
+### Deployed at https://james-inch.github.io/unit-4-game/
