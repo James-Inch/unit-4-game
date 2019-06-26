@@ -13,10 +13,12 @@ $(document).ready(function () {
     console.log(targetNumber);
     
     // These four variables select the random numbers that are assigned to each crystal... 
-    var crystal1 = Math.floor(Math.random() * 14) + 1;
-    var crystal2 = Math.floor(Math.random() * 14) + 1;
-    var crystal3 = Math.floor(Math.random() * 14) + 1;
-    var crystal4 = Math.floor(Math.random() * 14) + 1;
+    var crystalNthNumber = Math.floor(Math.random() * 14) + 1;
+
+    var crystal1 = crystalNthNumber;
+    var crystal2 = crystalNthNumber;
+    var crystal3 = crystalNthNumber;
+    var crystal4 = crystalNthNumber;
     
     // these were just to check to see if my random math was working... Now they are for cheating...
     console.log(crystal1);
@@ -72,11 +74,14 @@ $(document).ready(function () {
     function reset(){
         targetNumber = Math.floor(Math.random() * 49) + 50;
         console.log(targetNumber);
+
+        var crystalNthNumber = Math.floor(Math.random() * 14) + 1;
+
         $("#number").html(targetNumber);
-        crystal1 = Math.floor(Math.random() * 14) + 1;
-        crystal2 = Math.floor(Math.random() * 14) + 1;
-        crystal3 = Math.floor(Math.random() * 14) + 1;
-        crystal4 = Math.floor(Math.random() * 14) + 1;
+        crystal1 = crystalNthNumber;
+        crystal2 = crystalNthNumber;
+        crystal3 = crystalNthNumber;
+        crystal4 = crystalNthNumber;
         console.log(crystal1);
         console.log(crystal2);
         console.log(crystal3);
